@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <link rel="stylesheet" href="./src/styles/style.css">
+</head>
+<body>
+    <div id="root">
+        <div class="event">
+            <h4>Create Event</h4>
+            <input type="text" name="name" placeholder="Event Name" id="eName">
+            <input type="time" name="fTime" placeholder="From Time" id="fTime">
+            <input type="time" name="tTime" placeholder="To Time" id="tTime">
+            <input value="#008fe0" type="color" name="eColor" placeholder="Color" id="eColor">
+            <button id="btn">Create Event</button>
+            <button id="test-btn">Load Test Data</button>
+        </div>
+        <div class="wrapper">
+            <canvas height="970" width="280" id="canvas"></canvas>
+        </div>
+        <a href="" target="_blank" rel="noreferrer" >Github</a>
+    </div>
+</body>
+<script src="./lib/index.js"></script>
+</html>

@@ -1,11 +1,10 @@
 const path = require('path');
 
 module.exports = {
-    "mode": "none",
+    "mode": "production",
     "entry": "./src/index.js",
     "output": {
         "path": __dirname + '/lib',
         "filename": "index.js"
     },
-    devtool: 'eval',
 };

@@ -20,6 +20,8 @@ ctx.strokeStyle = "#dbd9db";
 ctx.font = "11px sans-serif";
 
 function draw() {
+    console.time('Time To Paint Canvas');
+
     let iX = INIT_DRAW_X;
     let iY = INIT_DRAW_Y;
 
@@ -39,6 +41,8 @@ function draw() {
         iY += LINE_OFFSET_Y;
         ctx.moveTo(iX, iY);
     }
+
+    console.timeEnd('Time To Paint Canvas');
 }
 
 function injectEventInCanvas(name, fTime, tTime, color) {
@@ -80,6 +84,7 @@ async function loadTestData() {
 onload = () => {
     document.querySelector('#btn').addEventListener('click', createEvent);
     document.querySelector('#test-btn').addEventListener('click', loadTestData);
+    loadTestData();
 }
 
 

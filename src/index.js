@@ -84,7 +84,6 @@ async function loadTestData() {
 onload = () => {
     document.querySelector('#btn').addEventListener('click', createEvent);
     document.querySelector('#test-btn').addEventListener('click', loadTestData);
-    loadTestData();
 }
 
 
